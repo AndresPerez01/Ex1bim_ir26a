@@ -1,0 +1,11 @@
+# Instalación de librerías principales:
+# - kagglehub: Para descargar el dataset de Rotten Tomatoes
+# - pandas & numpy: Para manejo de DataFrames y matrices
+# - sentence-transformers: Para los modelos all-MiniLM y all-mpnet
+# - faiss-cpu: Para la base de datos vectorial avanzada
+# - scikit-learn & matplotlib: Para la reducción de dimensionalidad (PCA) y gráficos
+# - spacy: Para el preprocesamiento lingüístico (Lematización y Stopwords)
+!pip install -q kagglehub pandas numpy sentence-transformers faiss-cpu scikit-learn matplotlib spacy
+
+# Descarga específica del modelo de lenguaje en inglés para spaCy
+!python -m spacy download en_core_web_sm
